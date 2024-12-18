@@ -1,19 +1,28 @@
 import 'package:flutter/material.dart';
+import 'screens/login_page.dart';
 
 void main() {
-  runApp(AdminDashboardApp());
+  runApp(AdminApp());
 }
 
-class AdminDashboardApp extends StatelessWidget {
+class AdminApp extends StatelessWidget {
+  const AdminApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: 'Admin Dashboard',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primaryColor: Colors.orange,
+        scaffoldBackgroundColor: Colors.white,
       ),
-      initialRoute: '/', // Set initial screen
+      home: LoginPage(), // Starting point
     );
   }
+}
+
+class CustomColors {
+  static const Color orange =
+      Color(0xFFFF7A00); // Orange color based on the picture
 }
