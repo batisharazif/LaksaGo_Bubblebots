@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'routes/app_routes.dart';
 
 void main() {
   runApp(AdminDashboardApp());
@@ -15,7 +14,6 @@ class AdminDashboardApp extends StatelessWidget {
         primarySwatch: Colors.orange,
       ),
       initialRoute: '/', // Set initial screen
-      routes: AppRoutes.routes, // Import routes
     );
   }
 }
