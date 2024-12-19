@@ -53,8 +53,7 @@ class StaffLoginPage extends StatelessWidget {
              ElevatedButton(
               onPressed: () {
                 Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
+                  //login to staff homepage
                 );
               },
               style: ElevatedButton.styleFrom(
