@@ -50,9 +50,12 @@ class StaffLoginPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 30),
-            ElevatedButton(
+             ElevatedButton(
               onPressed: () {
-                // login to staff homepage
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.orange,
